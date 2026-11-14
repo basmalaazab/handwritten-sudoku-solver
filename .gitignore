@@ -1,0 +1,9 @@
+__pycache__/
+.pytest_cache/
+.venv/
+data/*.gz
+data/processed/
+results/seed*/*/bank.npz
+results/seed*/*/cnn.keras
+results/seed*/*/cnn_logits.npz
+*.log
