@@ -1,0 +1,74 @@
+b7c46ca Claude (AI assistant) 2026-11-14 demo, report generator, data dictionary, README, contribution template
+
+ CONTRIBUTIONS.md        |  15 ++
+ README.md               |  65 +++++
+ docs/DATA_DICTIONARY.md |  76 ++++++
+ docs/DEMO_SCRIPT.md     |  23 ++
+ docs/P7_report.pdf      | 622 ++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/build_report.py    | 233 ++++++++++++++++++
+ run_demo.py             | 172 +++++++++++++
+ 7 files changed, 1206 insertions(+)
+bb0ee8e Claude (AI assistant) 2026-11-14 eval: Exp1-4 over 5 seeds (mean/std), tables and plots
+
+ make_figures.py                               |   79 ++
+ p7/eval.py                                    |  326 +++++
+ results/architecture.png                      |  Bin 0 -> 53300 bytes
+ results/classifier.png                        |  Bin 0 -> 112845 bytes
+ results/demo.png                              |  Bin 0 -> 273469 bytes
+ results/exp1.png                              |  Bin 0 -> 102523 bytes
+ results/exp2.png                              |  Bin 0 -> 25911 bytes
+ results/exp3.png                              |  Bin 0 -> 31759 bytes
+ results/seed1/overconf/classifier_report.json |  119 ++
+ results/seed1/std/classifier_report.json      |  124 ++
+ results/seed1/std/correction_log.csv          |  706 ++++++++++
+ results/seed1/std/experiments.json            |  735 +++++++++++
+ results/seed1/std/puzzle_summary.csv          | 1501 +++++++++++++++++++++
+ results/seed2/overconf/classifier_report.json |  119 ++
+ results/seed2/std/classifier_report.json      |  124 ++
+ results/seed2/std/correction_log.csv          |  677 ++++++++++
+ results/seed2/std/experiments.json            |  735 +++++++++++
+ results/seed2/std/puzzle_summary.csv          | 1501 +++++++++++++++++++++
+ results/seed3/overconf/classifier_report.json |  119 ++
+ results/seed3/std/classifier_report.json      |  124 ++
+ results/seed3/std/correction_log.csv          |  670 ++++++++++
+ results/seed3/std/experiments.json            |  735 +++++++++++
+ results/seed3/std/puzzle_summary.csv          | 1501 +++++++++++++++++++++
+ results/seed4/overconf/classifier_report.json |  119 ++
+ results/seed4/std/classifier_report.json      |  124 ++
+ results/seed4/std/correction_log.csv          |  719 ++++++++++
+ results/seed4/std/experiments.json            |  735 +++++++++++
+ results/seed4/std/puzzle_summary.csv          | 1501 +++++++++++++++++++++
+ results/seed5/overconf/classifier_report.json |  119 ++
+ results/seed5/std/classifier_report.json      |  124 ++
+ results/seed5/std/correction_log.csv          |  703 ++++++++++
+ results/seed5/std/experiments.json            |  735 +++++++++++
+ results/seed5/std/puzzle_summary.csv          | 1501 +++++++++++++++++++++
+ results/summary_mean_std.json                 | 1760 +++++++++++++++++++++++++
+ results/tables.md                             |   96 ++
+ run_eval.py                                   |   13 +
+ 36 files changed, 18144 insertions(+)
+d9eb086 Claude (AI assistant) 2026-11-14 tests: 20 normal, 7 edge, 4 impossible
+
+ tests/conftest.py     |   3 ++
+ tests/test_csp.py     | 103 ++++++++++++++++++++++++++++++++++++++++
+ tests/test_data_nn.py |  38 +++++++++++++++
+ tests/test_search.py  | 128 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ 4 files changed, 272 insertions(+)
+14eabc8 Claude (AI assistant) 2026-11-14 search + integration: UCS/Greedy/A*, admissible heuristic, counters, unreadable report
+
+ p7/integration.py |  27 ++++++++
+ p7/search.py      | 184 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 211 insertions(+)
+5d2b559 Claude (AI assistant) 2026-11-14 data + nn: MNIST download/MD5/split, hard-digit rule, CNN, logistic-regression baseline, calibration
+
+ make_data.py |  37 +++++++++++
+ p7/data.py   | 201 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ p7/nn.py     |  92 +++++++++++++++++++++++++++
+ 3 files changed, 330 insertions(+)
+18017b5 Claude (AI assistant) 2026-11-14 csp: BT / FC / AC-3 (none|pre|mac) switches, counters, unique-puzzle generator
+
+ .gitignore       |   9 ++
+ p7/__init__.py   |   0
+ p7/csp.py        | 275 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ requirements.txt |   8 ++
+ 4 files changed, 292 insertions(+)
