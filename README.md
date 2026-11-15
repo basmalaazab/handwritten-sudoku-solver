@@ -41,6 +41,16 @@ python run_eval.py --seeds 1 2 3 4 5     # all experiments, 5 seeds (~40 min on 
 If `yann.lecun.com` is unreachable `make_data.py` falls back to two mirrors and checks the same MD5 values.
 Put the four `.gz` files in `data/` by hand if you are offline.
 
+## Web app (Streamlit)
+
+```bash
+streamlit run app.py        # Windows: run_app.bat / run_app.ps1 (one folder above this one)
+```
+Generated mode: choose puzzle seed, givens, injected misreads, UCS/A*/Greedy, solvable/unique goal; the page shows the mosaic,
+the CNN reading and its confidence, the AC-3 conflict, the corrections, the solution, the search counters and trace,
+the CSP pruning table and NN on/off. Upload mode: upload a picture of a 9x9 handwritten grid (one digit per cell, no lines).
+Needs the model of `results/seed1/std` (included in the zip).
+
 ## Switches of the CSP (checklist item 6)
 
 ```python
